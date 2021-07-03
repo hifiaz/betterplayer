@@ -249,10 +249,17 @@ class _BetterPlayerMaterialControlsState
       },
       child: Padding(
         padding: const EdgeInsets.all(8),
-        child: Icon(
-          _controlsConfiguration.overflowMenuIcon,
-          color: _controlsConfiguration.iconsColor,
+        child: CircleAvatar(
+          backgroundColor: Colors.black,
+          child: Icon(
+            _controlsConfiguration.overflowMenuIcon,
+            color: _controlsConfiguration.iconsColor,
+          ),
         ),
+        // child: Icon(
+        //   _controlsConfiguration.overflowMenuIcon,
+        //   color: _controlsConfiguration.iconsColor,
+        // ),
       ),
     );
   }
